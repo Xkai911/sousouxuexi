@@ -1,0 +1,29 @@
+<!--pages/publish/publish.wxml-->
+<view class='container'>
+  <view class='info'>
+    <view bindtap='goStudent'>
+      <text>我是学生</text>
+    </view>
+    <view bindtap='goTeacher'>
+      <text>我是老师</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <view bindtap='goHome'>
+      <icon type="info" size="25"/>
+      <text>首页</text>
+    </view>
+    <view bindtap='goIndex'>
+      <icon type="info" size="25"/>
+      <text>接单</text>
+    </view>
+    <view class='bar'>
+      <icon type="warn" size="25"/>
+      <text>发布</text>
+    </view>
+    <view bindtap='goUserInfo'>
+      <icon type="cancel" size="25"/>
+      <text>我的</text>
+    </view>
+  </view>
+</view>

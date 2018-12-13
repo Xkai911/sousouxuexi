@@ -1,0 +1,46 @@
+<view class="container">
+  <view class='header'>
+    <view class='title'>
+      <text class='titleName'>{{title}}</text>
+      <text>招聘人数：{{people}}人</text>
+    </view>
+    <view class='price'>
+      <text>{{price}}元/小时</text>
+      <text>{{priceInfo}}</text>
+    </view>
+  </view>
+  <view class='inline'></view>
+  <view class='info'>
+    <view>
+      <text class='textName'>位置:</text>
+      <text>{{place}}</text>
+    </view>
+    <view>
+      <text  class='textName'>详情:</text>
+      <text>{{info}}</text>
+    </view>
+    <view>
+      <text class='textName'>工作时间:</text>
+      <text>{{time}}</text>
+    </view>
+    <view>
+      <text class='textName'>工作内容:</text>
+      <text>{{workInfo}}</text>
+    </view>
+    <view>
+      <text class='textName'>工作要求:</text>
+      <text>{{workRequire}}</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <view class='bar'>
+      <text>立即报名</text>
+    </view>
+    <view>
+      <text>收藏</text>
+    </view>
+    <view>
+      <text>分享</text>
+    </view>
+  </view>
+</view>

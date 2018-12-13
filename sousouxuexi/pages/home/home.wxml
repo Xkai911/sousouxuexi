@@ -1,0 +1,117 @@
+<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登陆</button>
+
+<view wx:else>
+
+  <view class='container'>
+    <view class='banner'>
+      <swiper indicator-dots="{{indicatorDots}}" 
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"> 
+        <block wx:for="{{arr}}"> 
+          <swiper-item>
+              <image src="{{item}}" class="slide-image"/> 
+          </swiper-item> 
+        </block> 
+      </swiper>
+    </view>
+    <view>
+      <view class='text'>为你推荐</view>
+      <view class='pushCourses'>
+        <view>推送课程</view>
+        <view>推送课程</view>
+        <view>推送课程</view>
+      </view>
+    </view>
+    <view class='info'>
+      <view class='list' bindtap='goIntClass'>
+        <view>
+          <image src='../img/name.jpg' height="100px"/>
+          
+        </view>
+        <view style='width:100%'>
+          <view class='name'>php+web+java+大数据</view>
+          <view class='price'>￥100</view>
+          <view class='synopsis'>一次学习，终身受用。一次学习，终身受用。</view>
+          <view class='people'>在线人数：100人</view>
+        </view>
+      </view>
+      <view class='list' bindtap='goIntClass'>
+        <view>
+          <image src='../img/name.jpg' height="100px"/>
+          
+        </view>
+        <view style='width:100%'>
+          <view class='name'>php+web+java+大数据</view>
+          <view class='price'>￥100</view>
+          <view class='synopsis'>一次学习，终身受用。一次学习，终身受用。</view>
+          <view class='people'>在线人数：100人</view>
+        </view>
+      </view>
+      <view class='list' bindtap='goIntClass'>
+        <view>
+          <image src='../img/name.jpg' height="100px"/>
+          
+        </view>
+        <view style='width:100%'>
+          <view class='name'>php+web+java+大数据</view>
+          <view class='price'>￥100</view>
+          <view class='synopsis'>一次学习，终身受用。一次学习，终身受用。</view>
+          <view class='people'>在线人数：100人</view>
+        </view>
+      </view>
+      <view class='list' bindtap='goIntClass'>
+        <view>
+          <image src='../img/name.jpg' height="100px"/>
+          
+        </view>
+        <view style='width:100%'>
+          <view class='name'>php+web+java+大数据</view>
+          <view class='price'>￥100</view>
+          <view class='synopsis'>一次学习，终身受用。一次学习，终身受用。</view>
+          <view class='people'>在线人数：100人</view>
+        </view>
+      </view>
+      <view class='list' bindtap='goIntClass'>
+        <view>
+          <image src='../img/name.jpg' height="100px"/>
+          
+        </view>
+        <view style='width:100%'>
+          <view class='name'>php+web+java+大数据</view>
+          <view class='price'>￥100</view>
+          <view class='synopsis'>一次学习，终身受用。一次学习，终身受用。</view>
+          <view class='people'>在线人数：100人</view>
+        </view>
+      </view>
+      <view class='list' bindtap='goIntClass'>
+        <view>
+          <image src='../img/name.jpg' height="100px"/>
+          
+        </view>
+        <view style='width:100%'>
+          <view class='name'>php+web+java+大数据</view>
+          <view class='price'>￥100</view>
+          <view class='synopsis'>一次学习，终身受用。一次学习，终身受用。</view>
+          <view class='people'>在线人数：100人</view>
+        </view>
+      </view>
+    </view>
+    <view class='footer'>
+      <view class='bar'>
+        <icon type="info" size="25"/>
+        <text>首页</text>
+      </view>
+      <view bindtap="goIndex">
+        <icon type="info" size="25"/>
+        <text>接单</text>
+      </view>
+      <view bindtap="goPulish">
+        <icon type="warn" size="25"/>
+        <text>发布</text>
+      </view>
+      <view bindtap="goUserInfo">
+        <icon type="cancel" size="25"/>
+        <text>我的</text>
+      </view>
+    </view>
+  </view>
+</view>

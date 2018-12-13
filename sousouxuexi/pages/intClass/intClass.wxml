@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='video'>
+    <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback"></video>
+  </view>
+  <view class='lable'>
+    <view id='classInfo' style='background-color:{{classInfoBgColor}};color:{{classInfoColor}}' bindtap='classInfo'>课程简介</view>
+    <view id='classmore' style='background-color:{{classmoreBgColor}};color:{{classmoreColor}}' bindtap='classmore'>章节展示</view>
+    <view id='classAssess' style='background-color:{{classAssessBgColor}};color:{{classAssessColor}}' bindtap='classAssess'>学员评价</view>
+  </view>
+  <view class='classInfo' style='display:{{classInfoDisplay}}'><text>内容介绍：aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</text></view>
+  <view class='classmore' style='display:{{classmoreDisplay}}'><text>第一章：1111111\n第二章：222222</text></view>
+  <view class='classAssess' style='display:{{classAssessDisplay}}'></view>
+  <view class='footer'>
+    <view style='border-left:none'>分享</view>
+    <view>收藏</view>
+    <view>购买</view>
+  </view>
+</view>

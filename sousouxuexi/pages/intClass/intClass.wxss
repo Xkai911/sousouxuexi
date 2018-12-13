@@ -1,0 +1,55 @@
+.video video{
+  width: 100%
+}
+.lable{
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.lable view{
+  flex:1;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+#classInfo{
+  background-color: #000;
+  color: #fff;
+}
+.classInfo{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  margin-top: 15px;
+  word-break:break-all;
+}
+.classmore{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  margin-top: 15px;
+  display: none;
+}
+.classAssess{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  margin-top: 15px;
+  display: none;
+}
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+.footer view{
+  flex: 1;
+  text-align: center;
+  background-color: deepskyblue;
+  color: #fff;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+}

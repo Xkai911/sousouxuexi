@@ -1,0 +1,63 @@
+.header{
+  height: 50px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px
+}
+.header .userAvatarUrl{
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 15px;
+  margin-left: 15px
+}
+.header .userInfo{
+  display: flex;
+  flex-direction: column
+}
+.money{
+  display: flex;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 5px
+}
+.money view{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center
+}
+.money .income{
+  border-right: 1px solid #333
+}
+.info view{
+  display: flex;
+  line-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1px solid #333;
+  justify-content: space-between
+}
+.footer{
+  position: fixed;
+  height: 45px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 16px
+}
+.footer view{
+  flex:1;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.footer .bar{
+  background-color: #000;
+  color: #fff
+}

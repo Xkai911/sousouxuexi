@@ -1,0 +1,148 @@
+<!--index.wxml-->
+
+  <view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <!-- <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video> -->
+  <view class='seach'>
+    <input type='text' placeholder='搜索'></input>
+    <icon type="search" size="25"/>
+  </view>
+  <view class='class'>
+    <view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          {{array[index]}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+        <view class="picker">
+          {{array1[index1]}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+        <view class="picker">
+          {{array2[index2]}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}">
+        <view class="picker">
+          {{array3[index3]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='info'>
+    <view class='list' bindtap="goInfo">
+      <view class='name'>
+        <text class='key'>找音乐教师一名</text>
+      </view>
+      <view class='price'>
+        <text>￥100</text>
+      </view>
+      <view class='position'>
+        <text class="value">需求：本科学历、钢琴10级证书</text>
+        <text class="value">山东省青岛市崂山区天怡景园c区4号楼一单元606室</text>
+      </view>
+      
+    </view>
+    <view class='list' bindtap="goInfo">
+      <view class='name'>
+        <text class='key'>找音乐教师一名</text>
+      </view>
+      <view class='price'>
+        <text>￥100</text>
+      </view>
+      <view class='position'>
+        <text class="value">需求：本科学历、钢琴10级证书</text>
+        <text class="value">山东省青岛市崂山区天怡景园c区4号楼一单元606室</text>
+      </view>
+      
+    </view>
+    <view class='list' bindtap="goInfo">
+      <view class='name'>
+        <text class='key'>找音乐教师一名</text>
+      </view>
+      <view class='price'>
+        <text>￥100</text>
+      </view>
+      <view class='position'>
+        <text class="value">需求：本科学历、钢琴10级证书</text>
+        <text class="value">山东省青岛市崂山区天怡景园c区4号楼一单元606室</text>
+      </view>
+      
+    </view>
+    <view class='list' bindtap="goInfo">
+      <view class='name'>
+        <text class='key'>找音乐教师一名</text>
+      </view>
+      <view class='price'>
+        <text>￥100</text>
+      </view>
+      <view class='position'>
+        <text class="value">需求：本科学历、钢琴10级证书</text>
+        <text class="value">山东省青岛市崂山区天怡景园c区4号楼一单元606室</text>
+      </view>
+      
+    </view>
+    <view class='list' bindtap="goInfo">
+      <view class='name'>
+        <text class='key'>找音乐教师一名</text>
+      </view>
+      <view class='price'>
+        <text>￥100</text>
+      </view>
+      <view class='position'>
+        <text class="value">需求：本科学历、钢琴10级证书</text>
+        <text class="value">山东省青岛市崂山区天怡景园c区4号楼一单元606室</text>
+      </view>
+      
+    </view>
+    <view class='list' bindtap="goInfo">
+      <view class='name'>
+        <text class='key'>找音乐教师一名</text>
+      </view>
+      <view class='price'>
+        <text>￥100</text>
+      </view>
+      <view class='position'>
+        <text class="value">需求：本科学历、钢琴10级证书</text>
+        <text class="value">山东省青岛市崂山区天怡景园c区4号楼一单元606室</text>
+      </view>
+      
+    </view>
+  </view>
+  <view class='footer'>
+    <view bindtap='goHome'>
+      <icon type="info" size="25"/>
+      <text>首页</text>
+    </view>
+    <view class='bar'>
+      <icon type="info" size="25"/>
+      <text>接单</text>
+    </view>
+    <view bindtap="goPulish">
+      <icon type="warn" size="25"/>
+      <text>发布</text>
+    </view>
+    <view bindtap="goUserInfo">
+      <icon type="cancel" size="25"/>
+      <text>我的</text>
+    </view>
+  </view>
+</view>
+

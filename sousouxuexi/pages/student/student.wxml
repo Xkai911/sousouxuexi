@@ -1,0 +1,61 @@
+<!--pages/student/student.wxml-->
+<view class='container'>
+  <form>
+    <view class="section">
+      <view class="sectionTitle">
+        <text>我要找:</text>
+        <input name="input" />
+      </view>
+    </view>
+    <view class="section">
+      <view class="sectionTitle">
+        <text>薪资:</text>
+        <input name="input" />
+      </view>
+    </view>
+    <view class="section">
+      <view class="sectionTitle">
+        <text>位置:</text>
+        <input name="input" />
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="sectionTitle">
+        <text>时间:</text>
+        <checkbox-group>
+          <label class="checkbox" wx:for="{{weeks}}">
+            <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+          </label>
+        </checkbox-group>
+        <view class='time'>
+          <picker mode="time" value="{{startTime}}" start="00:00" end="23:59" bindchange="bindStartTimeChange">
+            <view class="picker">
+              {{startTime}}
+            </view>
+          </picker>
+          <text>~</text>
+          <picker mode="time" value="{{endTime}}" start="00:00" end="23:59" bindchange="bindEndTimeChange">
+            <view class="picker">
+              {{endTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="section">
+      <view class="sectionTitle">
+        <text>工作要求:</text>
+        <textarea></textarea> 
+      </view>
+    </view>
+    <view class="section">
+      <view class="sectionTitle">
+        <text>联系电话:</text>
+        <input name="input" />
+      </view>
+    </view>
+  </form>
+  <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 发布 </button>
+</view>
